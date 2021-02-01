@@ -81,6 +81,7 @@ function leerDatosCurso(curso){
 
     // Revisa si un elemento ya existe en el carrito
     const existe = articulosCarrito.some(curso => curso.id === infoCurso.id);
+
     if(existe){
         // actualizamos la cantidad
         const cursos = articulosCarrito.map( curso =>{
@@ -115,7 +116,7 @@ function carritoHTML() {
     limpiaHTML();
 
     // recorre el carrito y genera el HTML
-    articulosCarrito.forEach(curso =>{
+    articulosCarrito.forEach(curso => {
         const { imagen, titulo, precio, cantidad, id} = curso;
 
         const row = document.createElement('tr');
