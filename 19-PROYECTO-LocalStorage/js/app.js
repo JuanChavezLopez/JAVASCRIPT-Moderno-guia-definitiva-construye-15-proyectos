@@ -25,8 +25,6 @@ function eventListeners() {
 
 }
 
-
-
 // !------ FUNCTIONS-------------------
 function agregarTweet(e) {
     e.preventDefault();
